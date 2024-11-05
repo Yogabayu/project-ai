@@ -19,7 +19,10 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [
+        'http://ai.yogabayuap.com',
+        'http://localhost:8000',
+    ],
 
     'allowed_origins_patterns' => [],
 

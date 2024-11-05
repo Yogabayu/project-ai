@@ -41,15 +41,15 @@ html {
 }
 
 .loading .effect-1 {
-  animation: rotate 1s ease infinite;
+  animation: rotate 5s ease infinite;
 }
 
 .loading .effect-2 {
-  animation: rotate-opacity 1s ease infinite 0.1s;
+  animation: rotate-opacity 5s ease infinite 0.1s;
 }
 
 .loading .effect-3 {
-  animation: rotate-opacity 1s ease infinite 0.2s;
+  animation: rotate-opacity 5s ease infinite 0.2s;
 }
 
 .loading .effects {
@@ -77,3 +77,4 @@ html {
     transform: rotate(1turn);
   }
 }
+
