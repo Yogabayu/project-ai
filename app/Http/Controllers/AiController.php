@@ -10,23 +10,6 @@ class AiController extends Controller
     public function index(Request $request)
     {
         $prompt = $request->input('prompt');
-        // dd(env('VITE_APP_API_KEY'));
-
-        // $response = Http::withHeaders([
-        //     'Content-Type' => 'application/json',
-        // ])->post('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent', [
-        //     'contents' => [
-        //         [
-        //             'parts' => [
-        //                 [
-        //                     'text' => $prompt,
-        //                 ],
-        //             ],
-        //         ],
-        //     ],
-        // ])->withQueryParams([
-        //     'key' => env('VITE_APP_API_KEY'),
-        // ]);
         $response = Http::withHeaders([
             'Content-Type' => 'application/json',
         ])->post('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=' . env('VITE_APP_API_KEY'), [
