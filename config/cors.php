@@ -20,7 +20,7 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'http://ai.yogabayuap.com',
+        'https://ai.yogabayuap.com',
         'http://localhost:8000',
     ],
 

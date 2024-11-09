@@ -2,8 +2,8 @@
   "__plugin-vue_export-helper-c27b6911.js": {
     "file": "assets/_plugin-vue_export-helper-c27b6911.js"
   },
-  "_webfontloader-ac157b7f.js": {
-    "file": "assets/webfontloader-ac157b7f.js",
+  "_webfontloader-170a9602.js": {
+    "file": "assets/webfontloader-170a9602.js",
     "imports": [
       "resources/js/main.js"
     ],
@@ -17,7 +17,7 @@
     "css": [
       "assets/blank-3fac9ebf.css"
     ],
-    "file": "assets/blank-a59b64d7.js",
+    "file": "assets/blank-14356325.js",
     "imports": [
       "__plugin-vue_export-helper-c27b6911.js",
       "resources/js/main.js"
@@ -34,11 +34,11 @@
       "assets/main-80cff4ae.css"
     ],
     "dynamicImports": [
-      "_webfontloader-ac157b7f.js",
+      "_webfontloader-170a9602.js",
       "resources/js/layouts/blank.vue",
       "resources/js/pages/user/dashboard.vue"
     ],
-    "file": "assets/main-dd9b0398.js",
+    "file": "assets/main-9a5641ca.js",
     "isEntry": true,
     "src": "resources/js/main.js"
   },
@@ -50,7 +50,7 @@
     "css": [
       "assets/dashboard-f1d88c9d.css"
     ],
-    "file": "assets/dashboard-339e24e3.js",
+    "file": "assets/dashboard-3dd99445.js",
     "imports": [
       "resources/js/main.js",
       "__plugin-vue_export-helper-c27b6911.js"
