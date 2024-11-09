@@ -12,8 +12,12 @@
         </div>
       </div>
 
-      <div class="typed-text">
+      <!-- <div class="typed-text">
         <p class="text-content" ref="textContent">{{ typedText }}</p>
+      </div> -->
+      <div class="typed-text">
+        <!-- Using v-html for rendering markdown -->
+        <p class="text-content" ref="textContent" v-html="formattedText"></p>
       </div>
 
       <div class="response-footer">
@@ -46,6 +50,7 @@
 
 <script>
 import { francAll } from 'franc';
+import { marked } from 'marked';
 export default {
   name: "ResponseArea",
   props: {
@@ -113,6 +118,11 @@ export default {
       },
     };
   },
+  computed: {
+    formattedText() {
+      return this.typedText ? marked(this.typedText) : '';
+    }
+  },
   watch: {
     response(newVal) {
       if (newVal) {
@@ -120,6 +130,7 @@ export default {
       }
     },
   },
+
   async mounted() {
     if (this.response) {
       this.typeText(this.response);
@@ -252,9 +263,10 @@ export default {
         this.speechSynthesis.cancel();
 
         try {
-          // Use improved language detection
-          const detectedLangCode = this.detectLanguage(this.typedText);
-          console.log('Detected language:', detectedLangCode);
+          const cek = marked(this.typedText)
+          // console.log(cek);
+          
+          const detectedLangCode = this.detectLanguage(cek);
 
           this.speechUtterance = new SpeechSynthesisUtterance(this.typedText);
           this.speechUtterance.lang = detectedLangCode;
@@ -268,7 +280,6 @@ export default {
 
           if (voice) {
             this.speechUtterance.voice = voice;
-            console.log('Selected voice:', voice.name);
           }
 
           // Apply voice settings

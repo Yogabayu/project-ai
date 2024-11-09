@@ -71,18 +71,3 @@ app.config.globalProperties.$showToast = showToast
 app.config.globalProperties.$userPhotoUrl = 'http://localhost:8000/user/photo/';
 /** development */
 /** production */
-
-/** localhost */
-app.config.globalProperties.$filePath = 'http://localhost:8000/file/file/';
-/** development */
-/** production */
-
-/** localhost */
-app.config.globalProperties.$draftUrl = 'http://localhost:8000/draft/';
-/** development */
-/** production */
-
-/** localhost */
-app.config.globalProperties.$drafCommenttUrl = 'http://localhost:8000/draft/comment/';
-/** development */
-/** production */
